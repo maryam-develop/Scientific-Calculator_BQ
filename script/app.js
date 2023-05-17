@@ -1,7 +1,9 @@
 function getNum(num){
+    console.log(num);
     document.getElementById('result').value += num;
 
 }
+
 function clearScreen(){
     document.getElementById('result').value ="";
 } 
@@ -14,6 +16,7 @@ function getAnswer(){
     document.getElementById('result').value =eval(document.getElementById('result').value)
     console.log(document.getElementById('result').value)
 }
+
 function getNumPi(num){
     document.getElementById('result').value = Math.PI += num;
    
@@ -28,7 +31,3 @@ function getNumE(num){
     document.getElementById('result').value = Math.E += num;
    
 }
-// function getNumExp(num){
-//     document.getElementById('result').value = Math.exp(num) += num;
-   
-// }
