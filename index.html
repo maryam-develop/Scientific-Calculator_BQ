@@ -14,9 +14,7 @@
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center align-item-center w-50" style="height: 100vh">
-
-
+    <div class="container d-flex justify-content-center align-item-center w-50" style="height: 70vh">
 
         <table class="table table-success table-striped">
             <thead>
@@ -32,8 +30,8 @@
             <tbody>
                 <tr>
 
-                    <td><button type="button" class="btn btn-outline-primary" onclick=removeNumber('')>C</button></td>
-                    <td><button type="button" class="btn btn-outline-primary" onclick=clearScreen('AC')>AC</button></td>
+                    <td><button type="button" class="btn btn-outline-primary" onclick="removeNumber('')">C</button></td>
+                    <td><button type="button" class="btn btn-outline-primary" onclick="clearScreen('AC')">AC</button></td>
                     <td><button type="button" class="btn btn-outline-primary"
                             onclick="getNum('&#8730;')">&#8730;</button></td>
                     <td><button type="button" class="btn btn-outline-primary" onclick="getNum('+')">+</button></td>
@@ -77,19 +75,15 @@
                     <td><button type="button" class="btn btn-outline-primary" onclick="getNum('8')">8</button></td>
                     <td><button type="button" class="btn btn-outline-primary" onclick="getNum('9')">9</button></td>
                     <td><button type="button" class="btn btn-outline-primary" onclick="getNum('/')">/</button></td>
-                    <td><button type="button" class="btn btn-outline-primary"
-                            onclick="getNum('')">x<sup>2</sup></button></td>
-                    <td><button type="button" class="btn btn-outline-primary"
-                            onclick="getNum('')">x<sup>3</sup></button></td>
-                    <td><button type="button" class="btn btn-outline-primary"
-                            onclick="getNum('Math.log10')">log10</button></td>
-                    <td><button type="button" class="btn btn-outline-primary"
-                            onclick="getNum('Math.log2')">log2</button></td>
+                    <td><button type="button" class="btn btn-outline-primary" onclick="getNum('')">x<sup>2</sup></button></td>
+                    <td><button type="button" class="btn btn-outline-primary" onclick="getNum('')">x<sup>3</sup></button></td>
+                    <td><button type="button" class="btn btn-outline-primary" onclick="getNum('Math.log10')">log10</button></td>
+                    <td><button type="button" class="btn btn-outline-primary" onclick="getNum('Math.log2')">log2</button></td>
                 </tr>
                 <tr>
                     <td><button type="button" class="btn btn-outline-primary" onclick="getNum('0')">0</button></td>
                     <td><button type="button" class="btn btn-outline-primary" onclick="getNum('.')">.</button></td>
-                    <td><button type="button" class="btn btn-outline-primary" onclick="getNum('')">&#177;</button></td>
+                    <td><button type="button" class="btn btn-outline-primary" onclick="getNum('-')">&#177;</button></td>
                     <td><button type="button" class="btn btn-outline-primary" onclick=getAnswer()>=</button></td>
                     <td><button type="button" class="btn btn-outline-primary"
                             onclick="getNum('&#10098;')">&#10098;</button></td>
