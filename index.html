@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon"
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtsFSr-qRrO6KI2B-tRTAwiypRx0aQlS5igA&usqp=CAU"
         alt="">
@@ -32,14 +33,14 @@
 
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="removeNumber('')">C</button></td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="clearScreen('AC')">AC</button></td>
-                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100"  onclick="getNum('Math.sqrt&#40')">&#8730;</button></td>
+                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100"  onclick="getNumSqrt('')">&#8730;</button></td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('+')">+</button></td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('&#40')">&#40</button></td>
-                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100"  onclick="getNum('Math.cos&#40')">Cos</button>
+                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getCos('')">Cos</button>
                     </td>
-                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('Math.tan&#40')">tan</button>
+                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getTan('')">Tan</button>
                     </td>
-                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('Math.sin&#40')">sin</button>
+                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getSin('')">Sin</button>
                     </td>
                 </tr>
                 <tr>
@@ -49,19 +50,19 @@
                     <td><button type="button" class="btn btn-lg btn-outline-primary  w-100" onclick="getNum('-')">-</button></td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('&#41')">&#41</button></td>
 
-                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100"  onclick="getNum('Math.cosh&#40')">cosh</button></td>
-                    <td><button type="button" class="btn  btn-lg btn-outline-primary w-100"  onclick="getNum('Math.tanh&#40')">tanh</button></td>
-                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('Math.sinh&#40')">sinh</button></td>
+                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100"  onclick="getCosh('Math.cosh&#40')">Cosh</button></td>
+                    <td><button type="button" class="btn  btn-lg btn-outline-primary w-100"  onclick="getTanh('Math.tanh&#40')">Tanh</button></td>
+                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getSinh('Math.sinh&#40')">Sinh</button></td>
                 </tr>
                 <tr>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('4')">4</button></td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('5')">5</button></td>
                     <td><button type="button" class="btn  btn-lg btn-outline-primary w-100" onclick="getNum('6')">6</button></td>
                     <td><button type="button" class="btn  btn-lg btn-outline-primary w-100" onclick="getNum('*')">*</button></td>
-                    <td><button type="button" class="btn  btn-lg btn-outline-primary w-100" onclick="getNum('*1/2')">&#189;</button> </td>
+                    <td><button type="button" class="btn  btn-lg btn-outline-primary w-100" onclick="getNumhalf('*1/2')">&#189;</button> </td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNumE('')">e</button></td>
-                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('Math.log&#40')">log</button> </td>
-                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('Math.exp&#40')">exp</button></td>
+                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNumLog('')">log</button> </td>
+                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNumExp('')">exp</button></td>
                 </tr>
                 <tr>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('7')">7</button></td>
@@ -70,18 +71,18 @@
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('/')">/</button></td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('**2')">x<sup>2</sup></button></td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('**')">x<sup>y</sup></button></td>
-                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('Math.log10&#40')">log10</button></td>
-                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('Math.log2&#40')">log2</button></td>
+                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100"  onclick="getNumlog10('')">log10</button></td>
+                    <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNumlog2('')">log2</button></td>
                 </tr>
                 <tr>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('0')">0</button></td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('.')">.</button></td>
-                    <td colspan="2"><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick=getAnswer()>=</button></td>
+                    <td colspan="2"><button type="button" class="btn btn-lg btn-outline-dark w-100" onclick=getAnswer()>=</button></td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum('Math.cbrt&#40')">&#8731;</button></td>
 
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNumPi('')">&#8508;</button></td>
                     <td><button type="button" class="btn btn-lg btn-outline-primary w-100" onclick="getNum2Pi('')">2&#8508;</button></td>
-                    <td><button type="button" class="btn btn-lg btn-outline-dark w-100" onclick="getNum('!')">x!</button></td>
+                    <td><button type="button" class="btn btn-lg btn-outline-danger w-100" onclick="getNumFact('')">x!</button></td>
                 </tr>
             </tbody>
         </table>
